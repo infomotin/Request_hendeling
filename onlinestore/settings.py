@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'products'
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -55,9 +55,10 @@ ROOT_URLCONF = 'onlinestore.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'template'),
-                os.path.join(BASE_DIR,'product/template'),
-                os.path.join(BASE_DIR,'onlinestore/template')
+        'DIRS': [
+                os.path.join(BASE_DIR,'template'),
+                os.path.join(BASE_DIR,'product/template/'),
+                os.path.join(BASE_DIR,'onlinestore/template/')
 
         
         
